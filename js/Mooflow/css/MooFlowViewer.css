@@ -1,0 +1,34 @@
+.mf a.show {
+	position:absolute;
+	width:103px;
+	height:32px;
+	/*top:70%;*/
+	bottom:20px;
+	left:45%;
+	z-index:100;
+	cursor:pointer;
+}
+.mf a.show.image{
+	background:url(skin/open_image.png) no-repeat 50%;
+}
+.mf a.show.viewerload{
+	background:url(skin/loader.gif) no-repeat 50%;
+}
+.mf a.show.link{
+	background:url(../img/mas_info.png) no-repeat center center;
+	margin-bottom:35px;
+}
+.mf div.tooltip{
+	color:#5a5a5a;
+	font-size:11px;
+	font-weight:normal;
+	line-height:15px;
+	width:440px;
+	height:50px;
+	padding:10px;
+	position:absolute;
+	z-index:-3; /* Tenía 101 */
+	bottom:50px;
+	left:23%;
+	text-align:justify;
+}

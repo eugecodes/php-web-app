@@ -1,0 +1,28 @@
+
+
+    <div id="homeProductoPrincipal"><img src="/images/home/producto_principal.png" /></div>
+    	
+    <div id="homeRecetas">
+        <div class="left"></div>
+        
+        <? $i=1;foreach($recetas as $receta){?>
+        <div class="item">
+        	<div class="contenido">
+                <span class="titulo"><?=$receta['titulo_'.$this->lang->line('db')]?></span>
+                <span class="descripcion"><?=substr(strip_tags($receta['instrucciones_'.$this->lang->line('db')]),0,50)?>...</span>
+                <div class="ver_receta" style="cursor:pointer" onclick="location.href='/recetas/ver/<?=$receta->id?>'"><?=$this->lang->line('home_ver_receta')?></div>
+            </div>
+            <div class="img"><img src="/files/recetas/<?=$receta->imagen?>" width="190px" height="132px" /></div>
+        </div>
+        <? if($i<$cantidad){?>
+        <div class="separator"></div>
+        <? }?>
+        <? $i++;}?>
+
+        
+        
+        <div class="right"></div>
+    </div>
+    <div id="labelRecetas"><img src="<?=$this->lang->line('home_img_recetas')?>" /></div>
+        
+        

@@ -1,0 +1,151 @@
+Permisos:
+  Permisos_1:
+    nombre: acceso_sistema
+    controller: sistema
+  Permisos_2:
+    nombre: acceso_administrador
+    controller: sistema
+  Permisos_3:
+    nombre: aceso_usuarios
+    controller: usuarios
+  Permisos_4:
+    nombre: agregar_usuarios
+    controller: usuarios
+  Permisos_5:
+    nombre: acceso_promociones
+    controller: promociones
+  Permisos_6:
+    nombre: publicar_promo_corporativo
+    controller: promociones
+  Permisos_7:
+    nombre: acceso_productos
+    controller: productos
+  Permisos_8:
+    nombre: agregar_productos
+    controller: productos
+Roles:
+  Roles_1:
+    nombre: Administrador
+    descripcion: 'Usuario con permisos mayores'
+    permisos: '["acceso_productos","agregar_productos","acceso_promociones","publicar_promo_corporativo","acceso_sistema","acceso_administrador","aceso_usuarios","agregar_usuarios"]'
+  Roles_2:
+    nombre: Usuario
+    descripcion: 'Usuario basico'
+    permisos: '["acceso_sistema"]'
+ControlAccesos:
+  ControlAccesos_productos_:
+    controlador: productos
+    metodo: ''
+    permiso: acceso_productos
+  ControlAccesos_productos_agregarProducto:
+    controlador: productos
+    metodo: agregarProducto
+    permiso: agregar_productos
+  ControlAccesos_productos_editarProducto:
+    controlador: productos
+    metodo: editarProducto
+    permiso: agregar_productos
+  ControlAccesos_productos_eliminarProducto:
+    controlador: productos
+    metodo: eliminarProducto
+    permiso: agregar_productos
+  ControlAccesos_promociones_:
+    controlador: promociones
+    metodo: ''
+    permiso: acceso_promociones
+UsuarioConfiguracionOpciones:
+  UsuarioConfiguracionOpciones_5_imagen_usuario:
+    Usuario: Usuario_5
+    nombre: imagen_usuario
+    valor: /files/usuarios/5/asd.jpg
+  UsuarioConfiguracionOpciones_5_imagen_usuario16:
+    Usuario: Usuario_5
+    nombre: imagen_usuario16
+    valor: /files/usuarios/5/asd_16.jpg
+  UsuarioConfiguracionOpciones_5_imagen_usuario32:
+    Usuario: Usuario_5
+    nombre: imagen_usuario32
+    valor: /files/usuarios/5/asd_32.jpg
+  UsuarioConfiguracionOpciones_5_imagen_usuario48:
+    Usuario: Usuario_5
+    nombre: imagen_usuario48
+    valor: /files/usuarios/5/asd_48.jpg
+Usuario:
+  Usuario_1:
+    nombre: Administrador
+    usuario: admin
+    password: admin
+    email: admin@xpc.mx
+    activa: true
+    hash: null
+    last_login: '2010-07-27 20:59:50'
+    last_visit: '2010-07-27 21:00:44'
+    password_reset: null
+    Roles: Roles_1
+    created_at: '2010-07-22 10:48:30'
+    updated_at: '2010-07-27 21:00:44'
+  Usuario_2:
+    nombre: Dummy
+    usuario: usuario
+    password: password
+    email: dvaldivia@xpc.mx
+    activa: true
+    hash: null
+    last_login: '2004-07-22 11:14:00'
+    last_visit: '2004-07-22 11:14:00'
+    password_reset: null
+    Roles: Roles_2
+    created_at: '2010-07-22 11:09:48'
+    updated_at: '2010-07-22 13:36:44'
+  Usuario_3:
+    nombre: 'Expert Creations'
+    usuario: expert
+    password: expert
+    email: dvaldivia@xpc.mx
+    activa: true
+    hash: null
+    last_login: '2010-07-27 21:27:34'
+    last_visit: '2010-07-27 22:51:44'
+    password_reset: null
+    Roles: Roles_1
+    created_at: '2010-07-22 17:21:45'
+    updated_at: '2010-07-27 22:51:44'
+  Usuario_4:
+    nombre: christian
+    usuario: christian
+    password: '123456'
+    email: christian@xpcreations.com
+    activa: true
+    hash: null
+    last_login: '2010-07-22 17:25:13'
+    last_visit: '2010-07-22 17:25:15'
+    password_reset: null
+    Roles: Roles_1
+    created_at: '2010-07-22 17:25:00'
+    updated_at: '2010-07-22 17:25:15'
+  Usuario_5:
+    nombre: asd
+    usuario: asd
+    password: asd
+    email: asd
+    activa: true
+    hash: null
+    last_login: null
+    last_visit: null
+    password_reset: null
+    Roles: Roles_1
+    created_at: '2010-07-23 11:18:42'
+    updated_at: '2010-07-23 11:18:42'
+ConfiguracionOpciones:
+  ConfiguracionOpciones_imagen_usuario16:
+    modulo: usuarios
+    tipo: usuario
+    valor: images_bo/user16.jpg
+  ConfiguracionOpciones_imagen_usuario32:
+    modulo: usuarios
+    tipo: usuario
+    valor: images_bo/user32.jpg
+  ConfiguracionOpciones_imagen_usuario48:
+    modulo: usuarios
+    tipo: usuario
+    valor: images_bo/user48.jpg

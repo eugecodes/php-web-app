@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Abstract.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113070246465" remote="129566819400000000" />
+<file name="Check.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113082767181" remote="129566819400000000" />
+<file name="Condition.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113114879018" remote="129566819400000000" />
+<file name="Exception.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113084067256" remote="129566819400000000" />
+<file name="Filter.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113079607001" remote="129566819400000000" />
+<file name="Forupdate.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113100138175" remote="129566819400000000" />
+<file name="From.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113071566541" remote="129566819400000000" />
+<file name="Groupby.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113095627917" remote="129566819400000000" />
+<file name="Having.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113067186290" remote="129566819400000000" />
+<file name="JoinCondition.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113110508768" remote="129566819400000000" />
+<file name="Limit.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113074856729" remote="129566820000000000" />
+<file name="Offset.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113062676032" remote="129566820000000000" />
+<file name="Orderby.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113089887589" remote="129566820000000000" />
+<file name="Parser.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113101248239" remote="129566820000000000" />
+<file name="Part.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113091827700" remote="129566820000000000" />
+<file name="Registry.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113096587972" remote="129566820000000000" />
+<file name="Select.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113087487451" remote="129566820000000000" />
+<file name="Set.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113104718437" remote="129566820000000000" />
+<file name="Tokenizer.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113109478709" remote="129566820000000000" />
+<file name="Where.php" server="www.bellezaorganica.com.mx//public_html/" local="129540113077036854" remote="129566820000000000" />
+</dwsync>

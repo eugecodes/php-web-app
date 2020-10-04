@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BuildAll.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115739329128" remote="129566820600000000" />
+<file name="BuildAllLoad.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115749379703" remote="129566820600000000" />
+<file name="BuildAllReload.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115719177976" remote="129566820600000000" />
+<file name="Compile.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115756430106" remote="129566820600000000" />
+<file name="CreateDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115714867729" remote="129566820600000000" />
+<file name="CreateTables.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115752159862" remote="129566820600000000" />
+<file name="Dql.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115747879617" remote="129566820600000000" />
+<file name="DropDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115717447877" remote="129566820600000000" />
+<file name="DumpData.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115757810185" remote="129566820600000000" />
+<file name="Exception.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115727768467" remote="129566820600000000" />
+<file name="GenerateMigration.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115735068884" remote="129566820600000000" />
+<file name="GenerateMigrationsDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115732328728" remote="129566820600000000" />
+<file name="GenerateMigrationsDiff.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115730788640" remote="129566820600000000" />
+<file name="GenerateMigrationsModels.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115726498394" remote="129566820600000000" />
+<file name="GenerateModelsDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115753599944" remote="129566820600000000" />
+<file name="GenerateModelsYaml.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115736608973" remote="129566820600000000" />
+<file name="GenerateSql.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115743549370" remote="129566820600000000" />
+<file name="GenerateYamlDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115722228150" remote="129566820600000000" />
+<file name="GenerateYamlModels.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115723458220" remote="129566820600000000" />
+<file name="LoadData.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115745119459" remote="129566820600000000" />
+<file name="Migrate.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115713207634" remote="129566820600000000" />
+<file name="RebuildDb.php" server="www.bellezaorganica.com.mx//public_html/" local="129540115740849215" remote="129566820600000000" />
+</dwsync>

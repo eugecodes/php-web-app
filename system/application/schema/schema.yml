@@ -1,0 +1,196 @@
+Banner:
+  columns:
+    nombre: string(100)
+    producto_id: integer
+    fecha_inicio: date
+    fecha_fin: date
+    tipo: bool
+  relations:
+    Producto:
+      local: producto_id
+      foreign: id
+
+Categoria:
+  columns:
+    nombre: string(100)
+
+Ciudad:
+  columns:
+    ciudad: string(100)
+    estado_id: integer
+  relations:
+    Estado:
+      local: estado_id
+      foreign: id
+
+Cliente:
+  columns:
+    nombre: string(100)
+    email: string(150)
+    password: string(80)
+    direccion_envio_id: integer
+    facturacion_id: integer
+  relations:
+    DireccionEnvio:
+      local: direccion_envio_id
+      foreign: id
+    Facturacion:
+      local: facturacion_id
+      foreign: id
+
+DetallePedido:
+  columns:
+    pedido_id: integer
+    producto_id: integer
+    precio: float
+    cantidad: integer
+
+DireccionEnvio:
+  columns:
+    nombre_quien_recibe: string(200)
+    pais_id: integer
+    estado_id: integer
+    ciudad_id: integer
+    direccion: string(255)
+    colonia: string(100)
+    cp: string(5)
+    lada: string(3)
+    telefono: string(12)
+    email: string(255)
+    cliente_id: integer
+  relations:
+    Pais:
+      local: pais_id
+      foreign: id
+    Estado:
+      local: estado_id
+      foreign: id
+    Ciudad:
+      local: ciudad_id
+      foreign: id	
+
+Estado:
+  columns:
+    estado: string(100)
+    pais_id: integer
+  relations:
+    Pais:
+      local: pais_id
+      foreign: id
+
+Facturacion:
+  columns:
+    razon_social: string(100)
+    rfc: string(11)
+    pais_id: integer
+    estado_id: integer
+    ciudad_id: integer
+    direccion: string(255)
+    colonia: string(100)
+    cp: string(5)
+    lada_tel: string(3)
+    telefono: string(12)
+    lada_fax: string(3)
+    fax: string(12)
+    cliente_id: integer
+  relations:
+    Pais:
+      local: pais_id
+      foreign: id
+    Estado:
+      local: estado_id
+      foreign: id
+    Ciudad:
+      local: ciudad_id
+      foreign: is
+    
+
+Icono:
+  columns:
+    nombre: string(100)
+    imagen: string(255)
+
+Pais:
+  columns:
+    pais: string(100)
+
+Pedido:
+  columns:
+    fecha: datetime
+    folio: string(20)
+    cliente_id: integer
+    direccion_envio_id: integer
+    facturacion_id: integer
+    ultimo_estatus: string(50)
+    monto_pagado: float
+  relations:
+    DireccionEnvio:
+      local: direccion_envio_id
+      foreign: id
+    Facturacion:
+      local: facturacion_id
+      foreign: id
+    Cliente:
+      local: cliente_id
+      foreign: id	  
+
+Producto:
+  columns:
+    nombre: string(100)
+    categoria_id: integer
+    subcategoria_id: integer
+    informacion: string
+    beneficios: string
+    ingredientes: string
+    contenido: string(50)
+    costo: float
+    imagenOriginal: string(255)
+    imagenMediana: string(255) 
+    imagenPequena: string(255)
+    banner_id: integer
+    nuevo: bool
+  relations:
+    Banner:
+      local: banner_id
+      foreign: id
+    Categoria:
+      local: categoria_id
+      foreign: id
+    Subcategoria:
+      local: subcategoria_id
+      foreign: id
+    RelacionProducto:
+      local: id
+      foreign: producto_id
+    ProductoIcono:
+      local: id
+      foreign: producto_id
+
+ProductoIcono:
+  columns:
+    producto_id: integer
+    icono_id: integer
+
+RelacionProducto:
+  columns:
+    producto_id: integer
+    producto_relacionado_id: integer
+
+
+Subcategoria:
+  columns:
+    nombre: string(100)
+    descripcion: string
+    categoria_id: integer
+  relations:
+    Categoria:
+      local: categoria_id
+      foreign: id
+
+Usuario:
+  columns:
+    nombre: string(200)
+    email: string(200)
+    password: string(200)
+    ultima_visita: datetime
+    perfil: integer

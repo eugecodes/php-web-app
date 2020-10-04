@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	margin:0;
+}
+
+#layoutHeader
+{
+	background-image:url(/images/home/header_01.jpg);
+	width:auto;
+	height:144px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:auto;
+	clear:both;
+}
+
+#header
+{
+	margin:auto;
+	width:1000px;
+	height:144px;
+}
+
+
+#headerLogo
+{
+	background-image:url(/images/home/header_logo.png);
+	width:233px;
+	height:131px;
+	background-repeat:no-repeat;
+	background-position:center;
+	float:left;
+	position:relative;
+	top:15px;
+	left:10px;
+}
+
+#headerMenu
+{
+	width:788px;
+	height:34px;
+	background-image:url(/images/home/menu_sprite.png);
+	position:relative;
+	left:305px;
+	top: 47px;
+	background-repeat:no-repeat;
+}
+
+#headerMenu:hover
+{
+	height:50px;
+	background-position: 0px -38px;
+
+}
+
+#layoutWrapper
+{
+	width:auto;
+	min-height:280px;
+	margin:auto;
+	clear:both
+}
+
+#subheader
+{
+	background-image:url(/images/home/header_02.jpg);
+	width:auto;
+	height:257px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:auto;
+	clear:both;
+}
+
+
+#homeProductoPrincipal
+{
+	margin:auto;
+	width:496px;
+	height:337px;
+}
+
+
+#contenedorPrincipal
+{
+	width:1000px;
+	min-heigh:200px;
+	margin:108px auto auto;
+}
+
+#labelRecetas
+{
+	width:152px;
+	height:49px;
+	position:relative;
+	left:48px;
+	top:-264px;
+}
+
+#homeRecetas
+{
+	width:1000px;
+	height:190px;
+	margin:auto;
+}
+
+.left
+{
+	width: 34px;
+	height: 112px;
+	background-color:#ee3a43;
+	float:left;
+	background-image:url(/images/home/btn_flechita_izquierda.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	margin-right:53px;
+}
+
+.item
+{
+	width: 414px;
+	height: 112px;
+	float:left;
+}
+
+.separator
+{
+	width: 2px;
+	height: 112px;
+	float:left;
+	background-color:#f8c2c6;
+	margin-right:33px;
+}
+
+.right
+{
+	width: 34px;
+	height: 112px;
+	background-color:#ee3a43;
+	float:right;
+	background-image:url(/images/home/btn_flechita_derecha.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+#homeBanners
+{
+	width:1028px;
+	height:201px;
+	background-image:url(/images/home/shtcts_base.jpg);
+	margin:auto;
+	background-repeat:no-repeat;
+}
+
+#homeBanners div.comidasRapidas
+{
+	float:left;
+	margin-left:80px;
+	position:relative;
+	top:-15px;
+	
+}
+
+#homeBanners div.porquePouch
+{
+	float:left;
+	margin-left:93px;
+	top:-42px;
+	position:relative;
+}
+
+#homeBanners div.ideasNinos
+{
+	float:left;
+	margin-left:93px;
+	top:-42px;
+	position:relative;
+}
+
+
+
+
+
+
+
+#layoutFooter
+{
+	background-image:url(/images/home/footer_img_base.jpg);
+	width:auto;
+	height:108px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:auto;
+}

@@ -1,0 +1,940 @@
+@charset "utf-8";
+/* CSS Document */
+ul, ol{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	}
+a{ text-decoration:none;}
+img{ border:0;}
+.clear{ clear:both;}
+h1,h2,h3{ display:block; margin:0; padding:0;}
+@font-face {
+    font-family: 'AngelinaRegular';
+    src: url('angelina-webfont.eot');
+    src: url('angelina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('angelina-webfont.woff') format('woff'),
+         url('angelina-webfont.ttf') format('truetype'),
+         url('angelina-webfont.svg#AngelinaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Bliss2-Bold';
+    src: url('bliss2b.eot');
+    src: url('bliss2b.eot?#iefix') format('embedded-opentype'),
+         url('bliss2b.woff') format('woff'),
+         url('bliss2b.ttf') format('truetype'),
+         url('bliss2b.svg#bliss2b') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss2-Medium';
+    src: url('bliss2m.eot');
+    src: url('bliss2m.eot?#iefix') format('embedded-opentype'),
+         url('bliss2m.woff') format('woff'),
+         url('bliss2m.ttf') format('truetype'),
+         url('bliss2m.svg#bliss2m') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss2';
+    src: url('bliss2r.eot');
+    src: url('bliss2r.eot?#iefix') format('embedded-opentype'),
+         url('bliss2r.woff') format('woff'),
+         url('bliss2r.ttf') format('truetype'),
+         url('bliss2r.svg#bliss2r') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/**/
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;}
+body{
+	background:url(../images/header_bg.jpg) no-repeat center top;
+	min-width:1000px;
+}
+body.home{
+	background:url(../images/header_home.jpg) no-repeat center top !important;
+}
+
+body.pouch{
+	background:url(../images/pouch/pouch_bg.jpg) no-repeat center top !important;
+}
+
+.wrapp{
+	width:1000px;
+	min-width:1000px;
+	min-height:100%;
+	margin:0 auto;
+	}
+.header{
+	height:159px;
+	overflow:hidden;
+	}
+.header p,
+.header .social_lang,
+.header .menuBox{
+	float:left;
+	}
+.header p{
+	display:block;
+	width:270px;
+	height:146px;
+	}
+.header .social_lang{
+	height:40px;
+	width: 710px;
+	margin-top:10px;
+	}
+.header .social_lang ul{
+	float:right;
+	}	
+.header .social_lang ul li{
+	display:block;
+	float:left;
+	margin-right:5px;
+	}
+.header .social_lang ul li .btnsmall{
+	display:block;
+	position:relative;
+	width:53px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	font-family: 'Bliss2';
+	font-size:12px;
+	color:#ffffff;
+	background-color:#156bae;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #156bae;
+	behavior: url(css/PIE.htc);
+	position:relative;
+	}
+.header .social_lang ul li .btnsmall:hover,
+.header .social_lang ul li .btnsmall.selected{
+	border:1px solid #509cce;
+	}			
+.header .menuBox{
+	margin-left:10px;}	
+.header .menuBox li{
+	display:block;
+	float:left;
+	height:57px;
+	background: url(../images/menu_sprite.png) no-repeat -20000px -100px;
+	cursor: pointer;
+}	
+.header .menuBox li a{ display:block; }
+
+.header .menuBox li.recetas{ width:102px; background-position: left top;}
+.header .menuBox li.productos{ width:107px; background-position: -102px top;}	
+.header .menuBox li.qsomos{ width:146px; background-position: -210px top;}
+.header .menuBox li.distribuidores{ width:140px; background-position: -355px top}
+.header .menuBox li.promociones{ width:127px; background-position: -494px top}	
+.header .menuBox li.contacto{ width:91px; background-position: -620px top;}	
+
+
+.header .menuBox li.recetasSelected{ width:102px; background-position: left -56px;}
+.header .menuBox li.productosSelected{ width:107px; background-position: -102px -56px;}	
+.header .menuBox li.qsomosSelected{ width:146px; background-position: -210px -56px;}
+.header .menuBox li.distribuidoresSelected{ width:140px; background-position: -355px -56px}
+.header .menuBox li.promocionesSelected{ width:127px; background-position: -494px -56px}	
+.header .menuBox li.contactoSelected{ width:91px; background-position: -620px -56px;}	
+
+
+.header .menuBox li.recetas:hover{ width:102px; background-position: left -56px;}
+.header .menuBox li.productos:hover{ width:107px; background-position: -102px -56px;}	
+.header .menuBox li.qsomos:hover{ width:146px; background-position: -210px -56px;}
+.header .menuBox li.distribuidores:hover{ width:140px; background-position: -355px -56px}
+.header .menuBox li.promociones:hover{ width:127px; background-position: -494px -56px}	
+.header .menuBox li.contacto:hover{ width:91px; background-position: -620px -56px;}	
+
+
+
+.header .menuBoxeng li{
+	display:block;
+	float:left;
+	height:57px;
+	background: url(../images/menu_eng.png) no-repeat -20000px -100px;
+	cursor: pointer;
+}	
+.header .menuBoxeng li a{ display:block; }
+.header .menuBoxeng li.recetas{ width:102px; background-position: left top;}
+.header .menuBoxeng li.productos{ width:107px; background-position: -102px top;}	
+.header .menuBoxeng li.qsomos{ width:146px; background-position: -210px top;}
+.header .menuBoxeng li.distribuidores{ width:140px; background-position: -355px top}
+.header .menuBoxeng li.promociones{ width:127px; background-position: -494px top}	
+.header .menuBoxeng li.contacto{ width:91px; background-position: -620px top;}	
+
+.header .menuBoxeng li.recetasSelected{ width:102px; background-position: left -56px;}
+.header .menuBoxeng li.productosSelected{ width:107px; background-position: -102px -56px;}	
+.header .menuBoxeng li.qsomosSelected{ width:146px; background-position: -210px -56px;}
+.header .menuBoxeng li.distribuidoresSelected{ width:140px; background-position: -355px -56px}
+.header .menuBoxeng li.promocionesSelected{ width:127px; background-position: -494px -56px}	
+.header .menuBoxeng li.contactoSelected{ width:91px; background-position: -620px -56px;}	
+
+.header .menuBoxeng li.recetas:hover{ width:102px; background-position: left -56px;}
+.header .menuBoxeng li.productos:hover{ width:107px; background-position: -102px -56px;}	
+.header .menuBoxeng li.qsomos:hover{ width:146px; background-position: -210px -56px;}
+.header .menuBoxeng li.distribuidores:hover{ width:140px; background-position: -355px -56px}
+.header .menuBoxeng li.promociones:hover{ width:127px; background-position: -494px -56px}	
+.header .menuBoxeng li.contacto:hover{ width:91px; background-position: -620px -56px;}	
+
+/**/
+.main{ margin:30px 0; overflow:hidden;}
+.main .colum_left{
+	float:left;
+	width:233px;
+	height:466px;
+	}
+.main .colum_left .filtersBox{ 	position:relative; padding-top:22px;}	
+.main .colum_left .filtersBox img{
+	display:block;
+	position:absolute;
+	top:0;
+	z-index:10;}	
+.main .colum_left .filtersBox .filters{
+	width:223px;
+	height:415px;
+	padding:20px 0 10px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position:relative;
+	background:url(../images/bg_filter.jpg) repeat-x left top;
+	behavior: url(css/PIE.htc);
+	position:relative;}	
+	
+.main .colum_left .filtersBox .filters .title{
+	display:block;
+	width:100px;
+	margin:0 0 10px 10px;
+	font-family: 'Bliss2-Medium';
+	font-size:15px;
+	font-weight:bold;
+	color:#ffffff;
+	}	
+.selectdBox .dropDownList li{
+	display:block;
+	margin-bottom:5px;
+	font-family: 'Bliss2';
+	font-size:12px;
+	color:#013b84;
+	position:relative;
+	}
+.selectdBox .dropDownList li .selecter{
+	display:block;
+	width:207px;
+	height:24px;
+	padding-left:5px;
+	line-height:24px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+	background:url(../images/arrow_select.jpg) #ffffff no-repeat right top;
+	behavior: url(css/PIE.htc);
+	position:relative;
+	}
+.selectdBox .dropDownList li .list{ display:none; position:absolute; z-index:15; height:100px; width:212px; overflow:auto; background-color:#fff;}	
+.selectdBox .dropDownList li:hover .list{ display:block;}	
+.selectdBox .dropDownList li:hover .list li{ display:block; padding-left:5px; padding-bottom:5px; cursor:pointer;}
+.selectdBox .dropDownList li:hover .list li.selthis{ background:#09569E; border:1px solid #FFF; color:#FFFFFF; }
+
+.top{
+	height:5px;
+	margin-top:10px;}
+.space{
+	height:5px;
+	margin-top:15px;}	
+.spaceA{
+	height:5px;
+	margin-top:20px;}	
+
+.selectdBox .zipcode{
+	width:207px;
+	height:24px;
+	font-family: 'Bliss2';
+	font-size:12px;
+	color:#013b84;
+	padding-left:5px;
+	line-height:24px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color:#FFF;
+	border:none;
+	behavior: url(css/PIE.htc);
+	position:relative;
+	}
+.inputs input[type=button],
+.inputs input[type=submit]{
+	display:block;
+	width:213px;
+	height:32px;
+	font-family: 'Bliss2';
+	font-size:15px;
+	color:#013e86;
+	border:none;
+	text-align:left;
+	cursor:pointer;
+	margin-top:17px;
+	background:url(../images/button.png) no-repeat left top;	
+	}	
+.colum_right{ /***********************quitar el height********/
+	width:730px;
+	float:left;
+	margin-left:30px;
+	}
+.colum_right h1{
+	font-family: 'Bliss2-Bold';
+	height:35px;
+	color:#0064b1;
+	margin-bottom:20px;
+	}	
+/**********************copiar de aqui************************/
+#mycustomscroll {
+/* Typical fixed height and fixed width example */
+	width: 730px;
+	height:567px;
+	overflow: auto;
+	/* IE overflow fix, position must be relative or absolute*/
+	position: relative;
+	/*background-color: #E7EADE;*/
+
+}
+.fixedwidth {
+/* a wide div is used for creating horizontal scrollbars for demonstration purposes */
+	width: 732px;
+	height: auto;
+	position: relative;
+	color: black;
+	padding: 1px;
+}
+.colum_right .slider .elements{ overflow:hidden;}
+/*********************************Hasta aqui***************/
+/**/
+.colum_right .slider .elements li{
+	display:block;
+	float:left;
+	font-family: 'Bliss2-Bold';
+	margin-left:2px;
+	margin-bottom:2px;
+	height:57px;
+	line-height:57px;
+	background:url(../images/square_trans.png);
+	}	
+.colum_right .slider .elements li:first-child{ margin-left:0;}	
+.colum_right .slider .elements li.name{
+	width:138px;
+	padding-left:17px;
+	font-size:20px;
+	color:#0064b1;}
+.colum_right .slider .elements li.name.selected{
+	color:#ffcc00;
+	background-color:#064c93}	
+.colum_right .slider .elements li.location{
+	font-size:15px;
+	color:#666666;
+	width:423px;
+	text-align:center;
+	}
+.colum_right .slider .elements li.location.selected{
+	font-size:15px;
+	color:#ffffff;
+	background-color:#064c93
+	}	
+.colum_right .slider .elements li.map a{
+	display:block;
+	width:131px;
+	height:54px;
+	background:url(../images/google_btn.png) no-repeat left 12px;
+}
+.colum_right .slider .elements li.map a:hover{
+	width:133px;
+	background:url(../images/google_btn.png) no-repeat left -44px;
+}	
+.colum_right .slider .elements li.map.selected{background-color:#064c93}
+.colum_right .slider .elements li.map a.selected{
+	width:133px;
+	background:url(../images/google_btn.png) no-repeat left bottom;
+}
+.colum_right .slider .elements li.gmap{
+	height:300px;}	
+.base{
+	height:250px;
+	width:1000px;
+	background:url(../images/shtcts_base.jpg) no-repeat left bottom;}
+.base ul li{
+	display:block;
+	float:left;}	
+.base ul .fastfood{  /*********************************modificado*************************/
+	width:270px;
+	text-align:center;
+	padding-top:35px;
+	}
+.base ul .pouch{
+	width:465px;
+	height:224px;
+	background:url(../images/pouch.png) no-repeat center top;
+	cursor:pointer;
+}			
+.base ul .ideas{
+	width:220px;
+	height:190px;
+	background:url(../images/ideas.png) no-repeat center bottom;
+		cursor:pointer;
+}	
+	
+.base ul .poucheng{
+	width:465px;
+	height:224px;
+	background:url(../images/poucheng.png) no-repeat center top;
+	cursor:pointer;
+}			
+.base ul .ideaseng{
+	width:220px;
+	height:190px;
+	background:url(../images/ideaseng.png) no-repeat center bottom;
+	cursor:pointer;
+}		
+/**/
+.footer{
+	height:108px;
+	background:url(../images/footer.jpg) no-repeat center bottom;
+	}	
+.footer ul{
+	width:1000px;
+	min-width:1000px;
+	padding-top:30px;
+	margin:0 auto;
+	overflow:hidden;}	
+.footer ul li{
+	display:block;
+	float:left;
+	font-family: 'Bliss2';}
+.footer ul li.logo{
+	margin-right:20px;
+}	
+.footer ul li.copy{
+	font-size:12px;
+	color:#ffffff;
+	padding-top:25px;
+	width:385px;
+	}	
+.footer ul li.contact{
+	padding-top:25px;
+	width:310px;
+	}
+.footer ul li.contact img{float:left; margin-right:5px;}		
+.footer ul li.contact a{
+	display:block;
+	float:left;
+	font-size:12px;
+	color:#ffffff;
+	}		
+.footer ul li.fsocial{
+	font-size:12px;
+	color:#FFF;
+	padding-top:20px;
+	width:175px;}
+.footer ul li.fsocial span,
+.footer ul li.fsocial a
+{
+	display:block;
+	float:left;
+	margin-left:5px;
+	}
+.footer ul li.fsocial span{
+	padding-top:3px;}		
+.scroolBar{
+	background:}	
+	
+/**productos*/
+#mycustomscroll2 {
+/* Typical fixed height and fixed width example */
+	width: 445px;
+	height:325px;
+	overflow: auto;
+	/* IE overflow fix, position must be relative or absolute*/
+	position: relative;
+	/*background-color: #E7EADE;*/
+
+}
+#mycustomscroll2 .slider{
+	padding:20px;
+	font-family: 'Bliss2';
+	font-size:15px;
+	color:#666666;
+	min-height:500px;
+}
+#mycustomscroll2 .slider h2{
+	font-family: 'Bliss2-Bold';
+	font-size:25px;
+	color:#0064b1;
+}
+#mycustomscroll2 .slider h3{
+	font-family: 'Bliss2';
+	font-size:17px;
+	color:#0064b1;
+}
+.prodBox, .dataBox, .prodBoxList{ float:left; }
+.prodBox{width:329px;}
+.dataBox{ width:476px;}
+.dataBox .topBox{
+	width:431px;
+	margin:0 auto;
+	background:url(../images/bg_sub.png) no-repeat left top;
+	overflow:hidden;
+	}
+.dataBox .topBox ul li{
+	display:block;
+	float:left;
+	height:48px;
+	padding-top:10px;
+	}	
+.dataBox .topBox ul li.about{
+	width:115px;
+	margin-right:10px;
+	}
+.dataBox .topBox ul li.nutri{
+	width:100px;
+	margin-right:10px;
+	}
+.dataBox .topBox ul li.fb{
+	width:140px;
+	}
+.dataBox .topBox ul li.cnt{
+	width:40px;
+	color:#ffffff;
+	font-size:12px;
+	padding-top:17px;
+	}		
+.dataBox .contentData{
+	width:456px;
+	margin-left:10px;
+	margin-top:20px;
+	}			
+
+.prodBoxList{ width:194px;}
+.prodBoxList ul li{
+	display:block;
+	height:80px;
+	width:194px;
+	font-size:14px;
+	background:url(../images/line.png) no-repeat center bottom;
+	}
+.prodBoxList ul li a{
+	display:block;
+	height:80px;
+	color:#013b84;
+	}
+.prodBoxList ul li a span,
+.prodBoxList ul li a img{
+	display:block;
+	float:left;}
+.prodBoxList ul li a span{
+	font-family: 'Bliss2';
+	font-size:15px;
+	line-height:15px;
+	padding-top:20px;
+	width:110px;
+	}			
+.prodBoxList ul li a:hover{
+	color:#ffffff;
+	text-shadow: 0px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=1);
+	background:url(../images/prod_hov.png) no-repeat center center;
+	}			
+	
+/*recetas*/
+.pBoth{
+	margin:10px;
+	position:relative;}
+.main .colum_left .filtersBox .listaRecetas{
+	width:233px;
+	height:480;
+	padding:20px 0 10px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position:relative;
+	background: #09579e; /* Old browsers */
+	background: -moz-linear-gradient(top, #09579e 0%, #013b84 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#09579e), color-stop(100%,#013b84)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #09579e 0%,#013b84 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #09579e 0%,#013b84 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #09579e 0%,#013b84 100%); /* IE10+ */
+	background: linear-gradient(top, #09579e 0%,#013b84 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09579e', endColorstr='#013b84',GradientType=0 ); /* IE6-9 */
+	behavior: url(css/PIE.htc);
+	position:relative;}		
+.listaRecetas .menuBox li{
+	display:block;
+	border-top:1px solid #0156be;
+	border-bottom:1px solid #012a5a;
+	font-family: 'Bliss2-Medium';
+	font-size:15px;
+	}
+.listaRecetas .menuBox li:first-child{
+	border-top:none;
+}	
+.listaRecetas .menuBox li a{
+	display:block;
+	padding:2px 0 2px 32px;
+	color:#ffffff;
+	background:url(../images/list_arrow.png) no-repeat 17px 10px;
+	}	
+.listaRecetas .menuBox li .subCategory{
+	padding:5px 0;
+	background-color:#00316f;}		
+.listaRecetas .menuBox li .subCategory li{
+	font-family: 'Bliss2';
+	border:none;
+	padding-left:35px;
+	}
+.listaRecetas .menuBox li .subCategory li a{	
+background:url(../images/circle_bullet.png) no-repeat left 10px;
+padding-left:12px;	}
+.searchBox{
+	overflow:hidden;
+	}
+.searchBox input[type=text]{
+	width:166px;
+	float:left;
+	font-family: 'Bliss2';
+	height:22px;
+	font-size:12px;
+	color:#013b84;
+	margin:0;
+	border: 0;
+	background-color:#ffffff;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position:relative;
+	padding-left:5px;
+	behavior: url(css/PIE.htc);
+	}
+.searchBox input[type=button]{
+	border:none;
+	height:24px;
+	width:42px;
+	margin:0;
+	float:right;
+	overflow: visible;
+	border: 0;
+    padding: 0;
+    cursor: pointer;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background:url(../images/search.jpg) no-repeat left top;
+	position:relative;
+	behavior: url(css/PIE.htc);
+	}	
+.buscareceta{
+	height:1px;
+	background:url(../images/busca_tu_receta.png) no-repeat left top;}	
+.recetaCorta{ overflow:hidden; margin-top:20px;}
+.block1, .block2{ float:left;}	
+.block1{ width:395px; margin-right:25px;}
+.block1 h1{ height:auto;}
+.block1 p{ font-family: 'Bliss2'; color:#666666; font-size:15px;}
+.calificar{
+	display:block;
+	height:52px;
+	width:192px;
+	background:url(../images/calificacion.png) no-repeat -1000px -1000px;}
+.calificar.cincostar{background-position:left top;}
+.calificar.cuatrostar{background-position:left -52px;}
+.calificar.tresstar{background-position:left -104px;}
+.calificar.dosstar{background-position:left -156px;}
+.calificar.unastar{background-position:left -208px;}
+
+
+.calificareng{
+	display:block;
+	height:52px;
+	width:192px;
+	background:url(../images/rating.png) no-repeat -1000px -1000px;}
+.calificareng.cincostar{background-position:left top;}
+.calificareng.cuatrostar{background-position:left -52px;}
+.calificareng.tresstar{background-position:left -104px;}
+.calificareng.dosstar{background-position:left -156px;}
+.calificareng.unastar{background-position:left -208px;}
+
+.division{
+	height:5px;
+	margin:30px 0 40px 0;
+	background:url(../images/divisor.jpg) repeat-x; left top;}
+.masrecetas{ overflow:hidden;}
+.masrecetas	ul { overflow:hidden; text-align:center;}
+.masrecetas	ul li{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:238px;
+	height:86px;
+	vertical-align:top;
+	text-align:left;
+	font-family: 'Bliss2'; color:#666666; font-size:12px;
+	line-height:12px;
+	}
+.masrecetas	ul li img,
+.masrecetas	ul li .textInfo,
+.masrecetas	ul li a{
+	display:block;
+	float:left;
+	}	
+.masrecetas	ul li .textInfo{
+	width:108px;
+	margin:0 2px 0 7px;
+	}	
+.masrecetas	ul li .textInfo span{
+	display:block;
+	font-family: 'Bliss2-Bold';
+	font-size:17px;
+	color:#0064b1;
+	margin-bottom:7px;
+	line-height:17px;;}	
+
+	
+/*****HOME BY CHRISTIAN********/
+#homeProductoPrincipal
+{
+	margin:auto;
+	width:496px;
+	height:337px;
+}
+
+#labelRecetas
+{
+	width:152px;
+	height:49px;
+	position:relative;
+	left:48px;
+	top:-213px;
+}
+
+#homeRecetas
+{
+	width:990;
+	height:146px;
+	margin:auto;
+	margin-top:24px;
+	overflow:hidden;
+}
+
+.left
+{
+	width: 34px;
+	height: 112px;
+	background-color:#ee3a43;
+	float:left;
+	background-image:url(/images/home/btn_flechita_izquierda.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	margin-right:53px;
+	margin-top: 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	behavior: url(css/PIE.htc);
+	border-radius: 5px;
+	border:1px solid #ee3a43;
+}
+
+.item
+{
+	width: 414px;
+	height: 112px;
+	float:left;
+}
+
+.separator
+{
+	width: 2px;
+	height: 112px;
+	float:left;
+	background-color:#f8c2c6;
+	margin-right:33px;
+	margin-top:20px;
+}
+
+.right
+{
+	width: 34px;
+	height: 112px;
+	background-color:#ee3a43;
+	float:right;
+	background-image:url(/images/home/btn_flechita_derecha.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	margin-top: 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	behavior: url(css/PIE.htc);
+	border-radius: 5px;
+	border:1px solid #ee3a43;
+}	
+
+.item div.contenido
+{
+	width: 178px;
+	float:left;
+	min-height:60px;
+}
+
+.item span.titulo
+{
+	font-family:Bliss2-Medium;
+	color:#ee3a43;
+	display:block;
+	clear:both;
+	font-size:16px;
+	width: 178px;
+	margin-top:10px;
+}	
+
+.item span.descripcion
+{
+	font-family:Bliss2;
+	color:#696969;
+	display:block;
+	clear:both;
+	font-size:15px;
+	width: 178px;
+}	
+
+.item div.ver_receta
+{
+	font-family:Bliss2;
+	color:#fff;
+	display:block;
+	clear:both;
+	font-size:15px;
+	background-color:#ee3a43;
+	width: 125px;
+	background-image:url(/images/home/btn_flechita_derecha.png);
+	background-repeat:no-repeat;
+	background-position: 111px 5px;
+	margin-top:30px;
+	padding-left:5px;
+	height:22px;
+	line-height:21px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	behavior: url(css/PIE.htc);
+	border-radius: 5px;
+	border:1px solid #ee3a43;
+}	
+
+.item div.img
+{
+	float:left;
+	margin-left:30px;
+}	
+
+/*****POUCH BY CHRISTIAN**************/
+
+.bgPouch
+{
+	width:999px;
+	height: auto;
+	background-image:url(/images/pouch/img_central.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.bgPouchen
+{
+	width:999px;
+	height: auto;
+	background-image:url(/images/pouch/img_central_eng.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.pouch1
+{
+	width:606px;
+	margin:auto;
+	height:110px;
+}
+
+ div.pleft
+{
+	float:left;
+}
+
+ div.pright
+{
+	float:right;
+}
+
+.pouch2
+{
+	width:880px;
+	margin:auto;
+	height:110px;
+}
+
+.pouch3
+{
+	width:986px;
+	margin:auto;
+	height:130px;
+	margin-top:40px;
+}
+
+.pouch4 {
+    height: 110px;
+    margin-left: 78px;
+    margin-top: 15px;
+    width: 874px;
+}
+
+ div.pleft div.imagen
+{
+	float:left;
+}
+ div.pleft div.texto
+{
+	float:left;
+	font-family:Bliss2-Bold;
+	color:#0064b1;
+	width:110px;
+	margin-left:5px;
+}
+
+ div.pright div.imagen
+{
+	float:right;
+}
+ div.pright div.texto
+{
+	float:left;
+	font-family:Bliss2-Bold;
+	color:#0064b1;
+	width:120px;
+	margin-left:5px;
+}
+
+
+

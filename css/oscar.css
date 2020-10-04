@@ -1,0 +1,108 @@
+
+/* QUIENES SOMOS */
+
+
+.quienes{
+	background:url(/images/quienes_somos/header_02.jpg) top center no-repeat;
+	height:auto;
+	min-height:299px;
+}
+
+ #zoomRail{
+	width:1024px;
+	overflow:hidden;
+	margin:0 auto;
+	padding-top:50px;
+}
+ #zoomRail .wide{
+	width:9999px;
+}
+ #zoomRail .wide .zblock{
+	float:left;
+	width:542px;
+}
+
+ #zoomRail .wide .zblock .l,
+ #zoomRail .wide .zblock .r{
+	float:left;
+	width:280px;
+	margin-left:10px;
+}
+ #zoomRail .wide .zblock .l{
+	width:242px;
+	line-height:405px;
+	height:405px;
+}
+
+ #zoomRail .wide .zblock .l img{
+	width:242px;
+	vertical-align: middle 
+}
+
+ #zoomRail .wide .zblock .r h1{
+	display:block;
+	width:156px;
+	height:61px;
+	background:url(/images/quienes_somos/banderin_anio.png) top center no-repeat;
+}
+ #zoomRail .wide .zblock .r h1 label{
+	display:block;
+	text-align:center;
+	color:#FFFFFF;
+	font-weight:lighter;
+	text-shadow: 1px 1px #000000;
+	font-size:35px;
+	padding-top:10px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+ #zoomRail .wide .zblock .r p{
+	font-family:Bliss;
+	font-size:11px;
+	color:#000;
+	font-style: oblique;
+}
+ #timeline{
+	width:994px;
+	height:152px;
+	margin:0 auto;
+	background:url(/images/quienes_somos/base_timeline.png) center no-repeat;
+	margin-top:-38px;
+}
+
+ #timeline ul{
+	display:block;
+	float:left;
+	margin-left:40px;
+	margin-top:12px;
+}
+ #timeline ul li{
+	display:block;
+	float:left;
+	width:110px;
+	color:#FFF;
+	text-shadow: 1px 1px #000000;
+	font-weight:bold;
+	font-size:22px;
+	text-align:center;
+	cursor:pointer;
+	height:127px;
+	vertical-align:bottom;
+	line-height:127px;
+}
+ #timeline ul li.selected{
+	background:url(/images/quienes_somos/selector_anio.png) top center no-repeat;
+	
+}
+ #timeline ul li.tres{
+	width:127px;
+}
+ #timeline ul li.cuatro{
+	110px;
+}
+ #timeline ul li.cinco{
+	width:120px;
+}
+
+ #timeline ul li.siete{
+	width:120px;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+.colum_left {
+    display: none;
+}
+.recetaCorta {
+    display: block;
+}
+.header {
+    display: none;
+}
+body {
+    background: none repeat scroll 0 0 transparent;
+}
+.masrecetas {
+    display: none;
+}
+.block1 table {
+    display: none;
+}
+.base {
+    display: none;
+}
+.division {
+    display: none;
+}
+.footer {
+    display: none;
+}
+.block2 {
+    display: none;
+}
+.block1 {
+    width: 770px !important;
+}
+#header-print {
+	display:block !important;
+}
+#block2-print {
+	clear:both;
+	display:block !important;
+}
+#legend-print,#legend-print-2 {
+	display:none !important;
+}
